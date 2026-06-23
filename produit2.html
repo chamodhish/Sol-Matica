@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produit1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <title>Gommage Solide Purifiant</title>
+
+
+</head>
+
+<body>
+    <section class="background-prod">
+
+        <div class="product-container">
+
+            <div class="product-image">
+                <button class="carousel-btn prev">&#8249;</button>
+  
+                <div class="carousel-track">
+                    <img src="produit2.png" alt="Vue 1">
+                    <img src="produit2bis.png" alt="Vue 2">
+                </div>
+
+                <button class="carousel-btn next">&#8250;</button>
+            </div>
+
+            <div class="product-info">
+                <h1>Gommage Solide Purifiant - Yerba Maté</h1>
+                <p>Exfolie • Purifie • Lisse</p>
+                <ul>Extrait de Yerba Maté d'Argentine</ul>
+                <p><ul>Purifie et élimine les impuretés</ul></p>
+                <p><ul>Peau douce et éclatante</ul></p>
+                <p><ul>100% d'origine naturelle</ul></p>
+                <p><ul>Respecte la peau et la planéte</ul></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        const imgs = document.querySelectorAll('.carousel-track img');
+        let current = 0;
+
+        imgs[current].classList.add('active');
+
+        document.querySelector('.prev').addEventListener('click', () => {
+        imgs[current].classList.remove('active');
+        current = (current - 1 + imgs.length) % imgs.length;
+        imgs[current].classList.add('active');
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+        imgs[current].classList.remove('active');
+        current = (current + 1) % imgs.length;
+        imgs[current].classList.add('active');
+        });
+    </script>
+</body>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produit2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <title>Gommage Solide Purifiant</title>
+
+</head>
+
+<body>
+    <section class="background-prod">
+
+        <div class="product-container">
+
+            <div class="product-image">
+                <button class="carousel-btn prev">&#8249;</button>
+  
+                <div class="carousel-track">
+                    <img src="produit2.png alt="Vue 1">
+                    <img src="produit2bis.png" alt="Vue 2">
+                </div>
+
+                <button class="carousel-btn next">&#8250;</button>
+            </div>
+
+            <div class="product-info">
+                <h1>Gommage Solide Purifiant - Yerba Maté</h1>
+                <p>Exfolie • Purifie • Lisse</p>
+                <p><ul>Extrait de Yerba Maté d'Argentine</ul></p>
+                <p><ul>Purifie et élimine les impuretés</ul></p>
+                <p><ul>Peau douce et éclatante</ul></p>
+                <p><ul>100% d'origine naturelle</ul></p>
+                <p><ul>Respecte la peau et la planéte</ul></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        const imgs = document.querySelectorAll('.carousel-track img');
+        let current = 0;
+
+        imgs[current].classList.add('active');
+
+        document.querySelector('.prev').addEventListener('click', () => {
+        imgs[current].classList.remove('active');
+        current = (current - 1 + imgs.length) % imgs.length;
+        imgs[current].classList.add('active');
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+        imgs[current].classList.remove('active');
+        current = (current + 1) % imgs.length;
+        imgs[current].classList.add('active');
+        });
+    </script>
+</body>
+-->
